@@ -1,0 +1,313 @@
+extends head_template
+
+block title
+    title Business Name
+block content
+    include _mixins
+    header.header
+        .header_in
+            .top_line
+                //logo
+                +logo('header','Business Name','Business Name')
+                a.toggle_menu(href="#")
+                    span.toggle_menu_span
+                //top_menu
+                +menu('top_nav', 'Home' , 'Services' , 'About' , 'Portfolio' , 'Testimonials' , 'Contact')
+            //slider
+            .header_slider
+                ul#lightSlider
+                    li
+                        h1.header_title Simple,Fresh & Unique Design.
+                            .header_desc Donec posuere augue venenatis.
+                            button.header_btn SHOW MORE
+                    li
+                        h1.header_title Simple,Fresh & Unique Design.
+                            .header_desc Donec posuere augue venenatis.
+                            button.header_btn SHOW MORE
+                    li
+                        h1.header_title Simple,Fresh & Unique Design.
+                            .header_desc Donec posuere augue venenatis.
+                            button.header_btn SHOW MORE
+
+    section.section.service_mod
+        .section_head
+            h2.section_title What we offer
+            .section_desc Vestibulum elementum ex ullamcorper ligula vulputate
+        .section_content
+            ul.section_list
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.color_mod.icon.toolsicon-
+                        .offer_content
+                           h3.offer_title Vivamus tincidunt
+                           .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.icon.basketicon-
+                        .offer_content
+                            h3.offer_title Etiam porttitor sagittis ipsum
+                            .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.icon.layersicon-
+                        .offer_content
+                            h3.offer_title Vivamus tincidunt diam a iaculis
+                            .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.icon.analyticsicon-
+                        .offer_content
+                            h3.offer_title Donec metus augue
+                            .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.icon.gaugeicon-
+                        .offer_content
+                            h3.offer_title Aliquam sed mollis
+                            .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+                li.section_item
+                    .offer_block
+                        .offer_i_w
+                            i.offer_i.icon.globeicon-
+                        .offer_content
+                            h3.offer_title Vestibulum placerat nisl quis
+                            .offer_desc
+                                p Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae
+    section.about_section
+        ul.about_section_list
+            li.about_section_item
+                .about_pic(style="background-image: url(img/about_bg.jpg);")
+            li.about_section_item
+                .about_content
+                    h2.about_title Who we are
+                    .about_text
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
+                        p Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
+                    button.about_btn Read more
+    section.section.portfolio_mod
+        .section_head
+            h2.section_title See our work
+            .section_i_w
+                i.section_i.icon.cogicon-
+            .section_desc Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in <br> scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.
+        .section_content
+            .works_block
+                +menu('works_nav', 'All' , 'Web' , 'Logo Design' , 'WordPress' , 'E-commerce')
+                ul.works_list
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic1.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic2.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic3.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic4.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic5.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic6.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic7.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+                    li.works_item
+                        .works_box(style="background-image: url(img/work-item-pic8.jpg);")
+                            a.works_box_link
+                                .works_box_i_w
+                                    i.works_box_i.icon.eyeicon-
+                                h3.works_box_title Labore et dolore magnam
+                                .works_box_desc Wordpress
+    section.section
+        .section_head.section_head_mod
+            h2.section_title Testimonials
+            .section_i_w
+                i.section_i.icon.chat-emptyicon-
+        .section_content
+            ul#lSlider
+                li
+                    .testimonials_block
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                li
+                    .testimonials_block
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                li
+                    .testimonials_block
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                li
+                    .testimonials_block
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+                        .testimonials_item
+                            .testimonials_box
+                                blockquote “Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”
+                            .testimonials_member
+                                .testimonials_i_w
+                                    .testimonials_i.icon.usericon-
+                                .testimonials_name Jon Doe,
+                                    span.testimonials_company  Company Inc.
+    footer.footer
+        ul.footer_list
+            li.footer_item
+                .bottom_block
+                    +logo('bottom','Business Name','Business Name')
+                    .bottom_text
+                        p Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis
+            li.footer_item
+                .bottom_block
+                    h3.bottom_title Contact
+                    .bottom_text
+                        p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so
+                    ul.bottom_list
+                        li.bottom_item
+                            .bottom_i_w
+                                i.bottom_i.icon.locationicon-
+                            address.bottom_address hyderabadh
+                        li.bottom_item
+                            .bottom_i_w
+                                i.bottom_i.icon.mail-alticon-
+                            address.bottom_address info@company.com
+                        li.bottom_item
+                            .bottom_i_w
+                                i.bottom_i.icon.phoneicon-
+                            address.bottom_address 123 456 7890
+            li.footer_item
+                .bottom_block
+                    h3.bottom_title Latest Tweets
+                    ul.bottom_list
+                        li.bottom_item
+                            .bottom_tweet
+                                p Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per
+                                .bottom_tweet_time 5 Hours  Ago
+                        li.bottom_item
+                            .bottom_tweet
+                                p Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per
+                                .bottom_tweet_time 6 Hours  Ago
+            li.footer_item
+                .bottom_block
+                    h3.bottom_title News Letter
+                    .bottom_text
+                        p Type your email address below and recive our daily news letter for free
+                    form.bottom_form
+                        dl
+                            dt
+                                label.bottom_form_label(for='email')
+                            dd
+                                input.bottom_form_input(type='email' id='email' placeholder='Email Address')
+                        button.bottom_form_btn(type='submit') Submit
+        .bottom_line
+            .bottom_line_in
+                ul.bottom_line_list
+                    li.bottom_line_item
+                        p © 2015 Business name.All rights reserved.
+                    li.bottom_line_item
+                        p Designed by Colorpixels.net
+                    li.bottom_line_item
+                        .social_block
+                            ul.social_list
+                                li.social_item
+                                    a.social_link.social_link_a
+                                        i.social_i.icon.twittericon-
+                                li.social_item
+                                    a.social_link
+                                        i.social_i.icon.facebookicon-
+                                li.social_item
+                                    a.social_link
+                                        i.social_i.icon.linkedinicon-
+
+
+    script(src = "js/libs.min.js")
+    script(src="js/common.js")

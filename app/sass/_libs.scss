@@ -1,0 +1,95 @@
+@import "app/libs/lightslider/dist/css/lightslider"; /* slider jQuery plugin */
+
+/*------------- Customize header_slider plugin-----------------*/
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color:transparent;
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  position: relative;
+  margin: 0 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: 8px;
+    z-index: 100;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border:2px solid #fff;
+    top: 1px;
+    left: 1px;
+    z-index: 100;
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color:transparent;
+  overflow: hidden;
+  &:before{
+    opacity: 1;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .lSPrev,
+  .lSNext{
+    visibility: hidden;
+  }
+}
+
+
+/*------------- Customize testimonials_slider plugin-----------------*/
+.testimonials .lSPager.lSpg > li a {
+  background-color:transparent;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  position: relative;
+  margin: 0;
+  border-radius: 50%;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 2px;
+    left: 2px;
+    z-index: 100;
+    border-radius: 50%;
+    background-color: rgba(40,37,40, .2);
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border:2px solid $color_accent_db;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+.testimonials .lSPager.lSpg > li:hover a, .testimonials .lSPager.lSpg > li.active a {
+  &:after{
+    background-color:#fff;
+  }
+  &:before{
+    opacity: 1;
+  }
+}
+/*-----------------------------end--------------------*/

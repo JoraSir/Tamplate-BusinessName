@@ -1,0 +1,14 @@
+@import "mixins";    /* mixins */
+@import "variables";  /* variables */
+
+@import "reset";
+@import "fonts";
+@import "icons";
+@import "libs";    /* js plugins styles */
+
+@import "base";
+@import "header";
+@import "content";
+@import "footer";
+
+@import "media";  /* media styles */

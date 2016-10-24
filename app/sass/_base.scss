@@ -1,0 +1,33 @@
+/*------------------------base styles------------*/
+html{
+  height: 100%;
+  font: 10px $font_f_base;
+  font-weight: normal;
+}
+body{
+  height: 100%;
+  position: relative;
+  font-size:$font_size_base;
+  color: $color_txt_base;
+  background: $body_bg;
+  overflow-x: hidden;
+  min-width:$page_min_width;
+  line-height:1.5;
+}
+a {
+  text-decoration: none;
+  color:$color_link_base;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+button{
+  cursor: pointer;
+  border:none;
+}
+.hidden{
+  visibility: hidden;
+}
+/*------------------------base styles end-------*/
