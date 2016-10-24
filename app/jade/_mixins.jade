@@ -1,14 +1,14 @@
 //-logo
 mixin logo(className, siteName, link)
     div(class=className+"_logo_w")
-        a(alt=siteName class=className+"_logo" href='#')=link
+        a(href='#' title=siteName class=className+"_logo" )=link
 //- Use: +logo('className', 'siteName','link')
 
 
 //-logo_img
 mixin logo_i(alt , fileName)
     div(class=className+"_logo_w")
-        a(class=className+"_logo" href='#')
+        a(href='#' class=className+"_logo")
             img(alt=siteName  src="img/"+fileName)
 //- Use: +logo_i('className','siteName','fileName')
 
